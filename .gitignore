@@ -16,3 +16,6 @@ src/.dirstamp
 src/*.o
 tascamgtk
 stamp-h1
+dist
+*.deb
+debian

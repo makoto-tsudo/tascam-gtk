@@ -1,0 +1,10 @@
+#!/bin/bash
+
+WORK=$PWD/dist
+
+autoreconf -fiv
+./configure --prefix="${WORK}"
+make
+make install
+
+fakeroot dpkg-deb --build "${WORK}" .

@@ -46,3 +46,9 @@ make
 Note that you can also choose a different install prefix other than `/usr/local`, and you also can disable OSC support. See `./configure --help` to list all options.
 
 To install tascamgtk, run `make install` as root user.
+
+## Make deb package
+
+```sh
+dpkg-buildpackage -us -uc
+```
